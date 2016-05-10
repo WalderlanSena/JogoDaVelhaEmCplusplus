@@ -41,7 +41,7 @@ bool resultado(){
 	}
 
 	//Jogador 2
-
+	
 	//Verifica a tabela no modo horizontal
 	if(tabela[0][0] == 'X' && tabela[0][1] == 'X' && tabela[0][2] == 'X' || 
 	   tabela[1][0] == 'X' && tabela[1][1] == 'X' && tabela[1][2] == 'X' ||
@@ -76,7 +76,7 @@ bool resultado(){
 
 
 void tela(){
-	system("clear");//No caso de Sistemas Windows Altere para 'cls'...
+	system("clear");//Limpando Tela [ Modifique para 'cls' no caso de Windows ]
 	cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;	
 	cout << "!!!!!! JOGO DA VELHA !!!!!!" << endl;	
 	cout << "!!!!!!!!!!!!!!!!!!!!!!!!!!!" << endl;
@@ -197,11 +197,11 @@ main(){
 		
 		if(jogador1 < jogador2){
 			cout << endl << endl;
-			cout << "1° Jogador: " << endl;
+			cout << "Primeiro Jogador: " << endl;
 			jogador1++;
 		}else{
 			cout << endl << endl;
-			cout << "2° Jogador: " << endl;
+			cout << "Segundo Jogador: " << endl;
 			jogador2++;
 		}
 		//cout << "Total de Jogadas Realizadas: " << jogadas << endl;
