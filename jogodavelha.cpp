@@ -11,7 +11,9 @@
 using namespace std;
 
 int  i;//Controle do Laço
-char tabela[3][3] = {'1','2','3','4','5','6','7','8','9',};//Array da tabela
+char tabela[3][3] = {'1','2','3','4','5','6','7','8','9'};//Array da tabela
+int  control[3][3];
+char *con = &tabela[3][3];
 bool result;//Armazena Resultado das Posições
 int  jogadas = 0;//Calcula numeros de Jogadas
 
@@ -98,37 +100,92 @@ void condicao(int opcao, int joga1, int joga2){
 		switch(opcao){
 				//Coluna 01
 				case 1:
-					tabela[0][0] = 'X';
+					if(control[0][0] != 1){
+						tabela[0][0]  = 'X';
+						control[0][0] = 1;
+					}else{
+						cout << "Opcao ja selecionada !" << endl;
+						joga1--;
+						jogadas--;
+					}
 					break;
 				case 2:
-					tabela[0][1] = 'X';
+					if(control[0][1] != 1){
+						tabela[0][1]  = 'X';
+						control[0][1] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				case 3:
-					tabela[0][2] = 'X';
+					if(control[0][2] != 1){
+						tabela[0][2]  = 'X';
+						control[0][2] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				//End Coluna 01
 				
 				//Coluna 02
 				case 4:
-					tabela[1][0] = 'X';
+					if(control[1][0] != 1){
+						tabela[1][0]  = 'X';
+						control[1][0] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				case 5:
-					tabela[1][1] = 'X';
+					if(control[1][1] != 1){
+						tabela[1][1]  = 'X';
+						control[1][1] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				case 6:
-					tabela[1][2] = 'X';
+					if(control[1][2] != 1){
+						tabela[1][2]  = 'X';
+						control[1][2] =  1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				//End Coluna 02
 
 				//Coluna 03
 				case 7:
-					tabela[2][0] = 'X';
+					if(control[2][0] != 1){
+						tabela[2][0]  = 'X';
+						control[2][0] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;	
 				case 8:
-					tabela[2][1] = 'X';
+					if(control[2][1]  != 1){
+						tabela[2][1]  = 'X';
+						control[2][1] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				case 9:
-					tabela[2][2] = 'X';
+					if(control[2][2] != 1){
+						tabela[2][2]  = 'X';
+						control[2][2] = 1;
+					}else{
+						joga1--;
+						jogadas--;
+					}
 					break;
 				default:
 					cout << "Thau ! Opcao Invalida..." << endl;
@@ -141,37 +198,92 @@ void condicao(int opcao, int joga1, int joga2){
 			switch(opcao){
 				//Coluna 01
 				case 1:
-					tabela[0][0] = 'O';
+					if(control[0][0] != 1){
+						tabela[0][0] = 'O';
+						control[0][0] = 1;
+					}else{
+						cout << "O campo ja esta selecionado " << endl;
+						joga2--;
+						jogadas--;
+					}
 					break;
 				case 2:
-					tabela[0][1] = 'O';
+					if(control[0][1] != 1){
+						tabela[0][1]  = 'O';
+						control[0][1] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				case 3:
-					tabela[0][2] = 'O';
+					if(control[0][2] != 1){
+						tabela[0][2]  = 'O';
+						control[0][2] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				//End Coluna 01
 				
 				//Coluna 02
 				case 4:
-					tabela[1][0] = 'O';
+					if(control[1][0] != 1){
+						tabela[1][0]  = 'O';
+						control[1][0] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				case 5:
-					tabela[1][1] = 'O';
+					if(control[1][1] != 1){
+						tabela[1][1]  = 'O';
+						control[1][1] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				case 6:
-					tabela[1][2] = 'O';
+					if(control[1][2] != 1){
+						tabela[1][2]  = 'O';
+						control[1][2] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				//End Coluna 02
 
 				//Coluna 03
 				case 7:
-					tabela[2][0] = 'O';
+					if(control[2][0] != 1){
+						tabela[2][0]  = 'O';
+						control[2][0] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;	
 				case 8:
-					tabela[2][1] = 'O';
+					if(control[2][1] != 1){
+						tabela[2][1]  = 'O';
+						control[2][1] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				case 9:
-					tabela[2][2] = 'O';
+					if(control[2][2] != 1){
+						tabela[2][2]  = 'O';
+						control[2][2] = 1;
+					}else{
+						joga2--;
+						jogadas--;
+					}
 					break;
 				default:
 					cout << "Thau! Opcao Invalida..." << endl;
@@ -192,7 +304,7 @@ main(){
 	do{
 		int posicao;//Variavel de Controle		
 		tela();//Mostar a Tela Inicial do Jogo
-		
+	
 		//Inicio do Jogo
 		
 		if(jogador1 < jogador2){
