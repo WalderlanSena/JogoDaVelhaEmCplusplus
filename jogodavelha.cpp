@@ -13,7 +13,6 @@ using namespace std;
 int  i;//Controle do Laço
 char tabela[3][3] = {'1','2','3','4','5','6','7','8','9'};//Array da tabela
 int  control[3][3];
-char *con = &tabela[3][3];
 bool result;//Armazena Resultado das Posições
 int  jogadas = 0;//Calcula numeros de Jogadas
 
