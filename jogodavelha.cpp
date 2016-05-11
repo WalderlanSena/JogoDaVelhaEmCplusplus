@@ -104,7 +104,6 @@ void condicao(int opcao, int joga1, int joga2){
 						tabela[0][0]  = 'X';
 						control[0][0] = 1;
 					}else{
-						cout << "Opcao ja selecionada !" << endl;
 						joga1--;
 						jogadas--;
 					}
@@ -202,7 +201,6 @@ void condicao(int opcao, int joga1, int joga2){
 						tabela[0][0] = 'O';
 						control[0][0] = 1;
 					}else{
-						cout << "O campo ja esta selecionado " << endl;
 						joga2--;
 						jogadas--;
 					}
