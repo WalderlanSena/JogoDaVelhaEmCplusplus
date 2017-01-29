@@ -3,7 +3,7 @@ Jogo da Velha em C++
 
 #Exemplo do Software
 
-![image](https://www.mentesvirtuaissena.com/img/JogoDaVelha.png)
+![image](https://www.mentesvirtuaissena.com/App/Views/public/img/JogoDaVelha.png)
 
 =============================================================
 ```
