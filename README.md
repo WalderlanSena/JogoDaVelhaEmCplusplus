@@ -3,7 +3,7 @@ Jogo da Velha em C++
 
 #Exemplo do Software
 
-![image](https://github.com/WalderlanSena/JogoDaVelhaEmCplusplus/blob/master/exemple.png)
+![image](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/exemplo.png)
 
 =============================================================
 ```
