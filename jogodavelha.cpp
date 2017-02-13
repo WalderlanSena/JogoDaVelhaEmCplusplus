@@ -1,6 +1,6 @@
 // ############################################################
 // 										Jogo da Velha em C++
-//                									v0.2.3
+//                									v0.2.4
 //										Software Open Source
 // Desenvolvedor: Walderlan Sena | by: http://www.walderlan.xyz
 // Curriculo: https://github.com/WalderlanSena/curriculo
@@ -27,7 +27,7 @@ void menuBanner(){
 	system(LIMPAR);
 	cout << "x-----------------------------x" << endl;
 	cout << "o    JOGO DA VELHA EM C++     o" << endl;
-	cout << "o                   v0.2.3    o" << endl;
+	cout << "o                   v0.2.4    o" << endl;
 	cout << "x-----------------------------x" << endl;
 	cout << endl;
 }
@@ -49,9 +49,9 @@ void menuModo(){
 				break;
 
 			case 2:
-				cout << "Digite o nome do 1° Jogador(a) sem espacos: ";
+				cout << "Digite o nome do 1 Jogador(a) sem espacos: ";
 					cin >> player1;
-				cout << "Digite o nome do 2° Jogador(a) sem espacos: ";
+				cout << "Digite o nome do 2 Jogador(a) sem espacos: ";
 					cin >> player2;
 				break;
 
@@ -344,9 +344,9 @@ main(){
 	int jogador1 = 1, jogador2 = 2;
 	menuModo();
 	do{
-		int posicao; //Variavel de Controle
+		int posicao; // Variavel de Controle
 
-		tela();     //Mostar a Tela Inicial do Jogo
+		tela(); // Mostrar a Tela Inicial do Jogo
 
 		// ========== Inicio do Jogo =========
 
