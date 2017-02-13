@@ -24,7 +24,7 @@ char player2[50]    = ""; //  Nome do 2° jogador(a)
 
 // Função de demostração do nome e informações da versão do Jogo
 void menuBanner(){
-	system("clear");
+	system(LIMPAR);
 	cout << "x-----------------------------x" << endl;
 	cout << "o    JOGO DA VELHA EM C++     o" << endl;
 	cout << "o                   v0.2.3    o" << endl;
