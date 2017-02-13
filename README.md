@@ -9,7 +9,7 @@ Jogo da Velha em C++
 	Quando o usuário adiciona um X ou O na posição respectiva da tabela, outra tabela em
 	background guarda este valor para que seja impossivel sua remarcação
 ```
-![image](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/array.png)
+![image](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/arrays.png)
 
 =============================================================
 
