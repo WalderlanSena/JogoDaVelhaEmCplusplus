@@ -3,7 +3,7 @@
 Jogo da Velha em C++
 
 
-#Exemplo do Funcionamento dos Arrays(Tabelas)
+# Exemplo do Funcionamento dos Arrays(Tabelas)
 
 ```
 	Quando o usuário adiciona um X ou O na posição respectiva da tabela, outra tabela em
@@ -13,7 +13,7 @@ Jogo da Velha em C++
 
 =============================================================
 
-#Exemplo do Software
+# Exemplo do Software
 
 ![image](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/exemplo.jpg)
 
