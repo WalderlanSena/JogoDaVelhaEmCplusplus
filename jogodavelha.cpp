@@ -1,11 +1,11 @@
-// ############################################################
-// 										Jogo da Velha em C++
-//                									v0.2.4
-//										Software Open Source
-// Desenvolvedor: Walderlan Sena | by: http://www.walderlan.xyz
-// Curriculo: https://github.com/WalderlanSena/curriculo
-// ############################################################
-
+/*
+  # Jogo da Velha em C++ - v-0.2.4
+  # Descrição  : É um jogo de regras extremamente simples, que não traz grandes dificuldades para seus jogadores e é facilmente aprendido.
+  # Compile    : g++ jogodavelha.cpp -o jogodavelha
+  # Developer  : Walderlan Sena - <http://www.walderlan.xyz/about>
+  # Email      : contato@walderlan.xyz
+  # LINCENSE   : Lincense GPL <http://gnu.org/lincense/gpl.html>
+*/
 #include <iostream>
 #include <iomanip>
 #include <stdlib.h>
@@ -113,7 +113,7 @@ char resultado(char player1[],char player2[]){
 	}else
 	//Verifica se tem empate
 	if(jogadas == 9){
-		cout << endl << "(: ---------- Jogo Empatado ---------- :) " << endl;
+		cout << endl << "(: ---------- Deu Velha ! Jogo Empatado ---------- :) " << endl;
 		//result = true;
 		exit(0);//Sair do Program
 	}
