@@ -1,7 +1,10 @@
-![image](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/logo.png)
-
-Jogo da Velha em C++
-
+<p align="center">
+  <a href="#">
+  	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/logo.png" width="400">
+	<br />
+	Jogo da Velha em C++
+   </a>
+</p>
 
 # Exemplo do Funcionamento dos Arrays(Tabelas)
 
