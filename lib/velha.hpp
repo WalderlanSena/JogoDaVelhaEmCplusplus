@@ -43,7 +43,7 @@ void vl_screen(void);
  *	@param joga1 (Quantidade de jogadas realizadas pelo Jogador1)
  *	@param joga2 (Quantidade de jogadas realizadas pelo Jogador2)
  */ 
-void vl_condicao(int opcao, int joga1, int joga2);
+void vl_condition(int opcao, int joga1, int joga2);
 
 /**
  *	Função que inicializa o Game

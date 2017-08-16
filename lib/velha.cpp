@@ -122,7 +122,7 @@ void vl_screen(){
 
 } //End Função Tela
 
-void vl_condicao(int opcao, int joga1, int joga2){
+void vl_condition(int opcao, int joga1, int joga2){
 	if(joga1 < joga2){
 		jogadas++;
 		switch(opcao){
@@ -351,7 +351,7 @@ void vl_initGame() {
 			cin >> posicao; // Captura o valor da posição digitada pelo o jogador(a)
 
 		//Verifica a Posição Digitada
-		vl_condicao(posicao,jogador1,jogador2);
+		vl_condition(posicao,jogador1,jogador2);
 
 	} while(i != 99); //end while
 }//end initGame
