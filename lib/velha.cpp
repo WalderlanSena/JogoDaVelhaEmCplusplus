@@ -1,36 +1,39 @@
 #include "velha.hpp"
 
-#define LIMPAR "clear" // Define que Limpar a tela [ Modifique para 'cls' no caso de Windows ]
+#define CLEAR "clear" //Define que Limpar a tela [ Modifique para 'cls' no caso de Windows ]
 
 int  i;  													 //Variável para realizar iterações
 char tabela[3][3]   = {'1','2','3','4','5','6','7','8','9'}; //Array da tabela
 int  control[3][3]  = {}; 						             //Array de controle de jogadas dos usuarios
 int  jogadas        = 0;            						 //Calcula numeros de Jogadas
 int  modo           = 0;           							 //Modo do jogo inicializado em SinglePlayer ou MultiPlayer
-char player1[]      = "";  									 //Nome do 1° jogador(a)
-char player2[]      = ""; 								     //Nome do 2° jogador(a)
+char player1[50]    = "";  									 //Nome do 1° jogador(a)
+char player2[50]    = ""; 								     //Nome do 2° jogador(a)
 
 
 /**
  *	Função que imprime mensagem e sai do programa
  *	@param (msg - Mensagem a ser impressa)
  */
-void finalMsg(string msg){
+void finalMsg(string msg)
+{
 	cout << msg << endl;
 	exit(0); //Termina o programa e retorna 0 para o sistema operacional
-}
+}//end function finalMsg
 
-// Função de demostração do nome e informações da versão do Jogo
-void vl_menuBanner(){
-	system(LIMPAR);
+// Função que imprime o banner e a versão atual do jogo
+void vl_menuBanner()
+{
+	system(CLEAR);										//Limpando o terminal
 	cout << "x-----------------------------x" << endl;
 	cout << "o    JOGO DA VELHA EM C++     o" << endl;
 	cout << "o                  v0.2.6     o" << endl;
-	cout << "x-----------------------------x" << endl;
-	cout << endl;
-}
-// Funçõa de escolha para o modo do jogo - Single Player ou MultiPlayer
-void vl_menuModo(){
+	cout << "x-----------------------------x" << endl << endl;
+}//end menuBanner
+
+// Função de escolha para o modo do jogo - Single Player ou MultiPlayer
+void vl_menuModo()
+{
 	
 	vl_menuBanner();
 
@@ -50,6 +53,7 @@ void vl_menuModo(){
 		case 2:
 			cout << "Digite o nome do 1 Jogador(a) sem espacos: ";
 				cin >> player1;
+
 			cout << "Digite o nome do 2 Jogador(a) sem espacos: ";
 				cin >> player2;
 			break;
@@ -58,14 +62,13 @@ void vl_menuModo(){
 			cout << "#------------------ by: Walderlan Sena -#" << endl;
 			exit(0);
 			break;
-
 		default:
 			exit(0);
 	} // end switch
-}
+}//end function
 
-void vl_result(char player1[],char player2[]){
-	
+void vl_result(char player1[],char player2[])
+{
 	// Verifica a tabela no modo horizontal
 	if(tabela[0][0] == 'O' && tabela[0][1] == 'O' && tabela[0][2] == 'O' || tabela[1][0] == 'O' && tabela[1][1] == 'O' && tabela[1][2] == 'O' || tabela[2][0] == 'O' && tabela[2][1] == 'O' && tabela[2][2] == 'O'){
 	
@@ -103,9 +106,9 @@ void vl_result(char player1[],char player2[]){
 }//End Resultado
 
 // Função que Imprimi a tela do Jogo
-void vl_screen(){
-
-	vl_menuBanner(); // Chamando a função do Banner do Software
+void vl_screen()
+{
+	vl_menuBanner(); //Chamando a função do Banner do Software
 	
 	int contJogadas = 9 - jogadas; // Verifica quantas jogadas foram realizadas
 	
@@ -122,7 +125,8 @@ void vl_screen(){
 
 } //End Função Tela
 
-void vl_condition(int opcao, int joga1, int joga2){
+void vl_condition(int opcao, int joga1, int joga2)
+{
 	if(joga1 < joga2){
 		jogadas++;
 		switch(opcao){
@@ -323,14 +327,16 @@ void vl_condition(int opcao, int joga1, int joga2){
 
 }//End Função Condição
 
-void vl_initGame() {
-	
-	int jogador1 = 1, 
+void vl_initGame()
+{	
+	int jogador1 = 1, //Variaveis iniciais que deferênciam as jogadas dos jogadores(a)
 		jogador2 = 2;
 
+	// Imprime a opção de escolha do modo do jogo
 	vl_menuModo();
 	
-	do {
+	// Inicio do laço de repetição que proporciona a interativdade do jogo
+	do{
 		int posicao; // Variavel de Controle
 
 		vl_screen(); // Mostrar a Tela Inicial do Jogo
@@ -338,20 +344,24 @@ void vl_initGame() {
 		// ========== Inicio do Jogo =========
 
 		// Verifica qual jogador(a) deve realizar a jogada no momento
-		if (jogador1 < jogador2) {
+		if(jogador1 < jogador2){
 			cout << endl << endl;;
 			cout << "Primeiro Jogador(a): " << player1 << endl << endl;
 			jogador1++;
-		} else {
+		}else{
 			cout << endl << endl;
 			cout << "Segundo Jogador(a): " << player2  << endl << endl;
 			jogador2++;
 		}//end if
+		
 		cout << setw(27) << "Digite uma posicao: ";
 			cin >> posicao; // Captura o valor da posição digitada pelo o jogador(a)
 
-		//Verifica a Posição Digitada
+		/**
+		 *	Verifica a posição digitada e passa a quantidade de jogadas de cada jogador
+		 *	@param posição escolhida pelo jogador. E quantidade de jogadas do jogador 1 e 2
+		 */
 		vl_condition(posicao,jogador1,jogador2);
 
-	} while(i != 99); //end while
+	}while(i != 99); //end while
 }//end initGame

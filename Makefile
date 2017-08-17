@@ -10,6 +10,6 @@ all:
 # Gerando Biblioteca Dinâmica para Sistemas Operacionais Linux
 libLinux:
 	$(CC) -shared -fPIC $(LIB) -o lib/libvelha.so
-# Excluido binário gerado
+# Excluido binário gerado e lib se existir
 clean:
 	rm -f jogodavelha lib/libvelha.so

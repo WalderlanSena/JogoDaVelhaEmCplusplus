@@ -16,6 +16,11 @@ using namespace std;	// Usuando os espaço de nomes std
  */
 
 /**
+ *	Função que retorna mensagem e termina o programa !
+ */
+void finalMsg(string msg);
+
+/**
  *	Função de demostração do nome e informações da versão do Jogo
  */ 
 void vl_menuBanner(void);
