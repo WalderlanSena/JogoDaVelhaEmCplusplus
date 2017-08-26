@@ -3,9 +3,10 @@
   	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/jogoDaVelha.png" width="500">
    </a>
 </p>
+
 <p align="center">
-	<a href="#"><img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/stable.svg"></a>
-	<a href="#"><img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/license.svg" alt="License"></a>
+<a href="#"><img src="http://www.walderlan.xyz/assets/stable.svg"></a>
+<a href="#"><img src="http://www.walderlan.xyz/assets/license.svg" alt="License"></a>
 </p>
 
 <h3 align="center">Exemplo do funcionamento do software</h3>
@@ -61,3 +62,6 @@
 	make clean    - Limpando os executaveis gerados
 ```
 
+<h3>Licença</h3>
+
+O Jogo da Velha é um software de código aberto licenciado sob a licença [MIT license](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/LICENSE).
