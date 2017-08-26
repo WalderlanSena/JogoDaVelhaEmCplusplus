@@ -4,6 +4,14 @@
    </a>
 </p>
 
+<h3 align="center">Exemplo do funcionamento do software</h3>
+
+<p align="center">
+  <a href="#">
+  	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/exemplo.jpg">
+   </a>
+</p>
+
 <h3 align="center">Exemplo do Funcionamento dos Arrays (Tabelas)</h3>
 
 <p align="center">Quando o usuário adiciona um X ou O na posição respectiva da tabela, outra tabela em background guarda este valor para que seja impossivel sua remarcação.</p>
@@ -11,14 +19,6 @@
 <p align="center">
   <a href="#">
   	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/arrays.png" width="800">
-   </a>
-</p>
-
-<h2>Exemplo do funcionamento do software</h2>
-
-<p align="center">
-  <a href="#">
-  	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/exemplo.jpg">
    </a>
 </p>
 
@@ -34,7 +34,8 @@
 ```
 
 
-<h3>Compilando software com a bilioteca estatica</h3>
+<h3>Compilando software com a bilioteca estática</h3>
+
 ```
 	g++ jogodavelha.cpp lib/velha.cpp -o jogodavelha <br />
 ```
@@ -45,3 +46,14 @@
 ```
 	g++ -shared -fPIC lib/velha.cpp  -o lib/libvelha.so
 ```
+
+<h3>Na utilização de sistemas operacionais baseados em gnu/linux, pode-se ultilizar o Makefile como:</h3>
+
+```
+	make          - Compila o programa com a biblioteca estática
+	
+	make libLinux - Gerando Biblioteca Dinâmica para Sistemas Operacionais Linux
+	
+	make clean    - Limpando os executaveis gerados
+```
+
