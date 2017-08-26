@@ -6,7 +6,7 @@
 
 <p align="center">
 <a href="#"><img src="http://www.walderlan.xyz/assets/stable.svg"></a>
-<a href="#"><img src="http://www.walderlan.xyz/assets/license.svg" alt="License"></a>
+<a href="#"><img src="http://www.walderlan.xyz/assets/licenseGPL.svg" alt="License"></a>
 </p>
 
 <h3 align="center">Exemplo do funcionamento do software</h3>
@@ -64,4 +64,4 @@
 
 <h3>Licença</h3>
 
-O Jogo da Velha é um software de código aberto licenciado sob a licença [MIT license](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/LICENSE).
+O Jogo da Velha é um software de código aberto licenciado sob a licença [GPL license](https://github.com/WalderlanSena/jogodavelhaemc/blob/master/LICENSE).
