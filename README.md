@@ -3,6 +3,10 @@
   	<img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/jogoDaVelha.png" width="500">
    </a>
 </p>
+<p align="center">
+	<a href="#"><img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/stable.svg"></a>
+	<a href="#"><img src="https://github.com/WalderlanSena/jogodavelhaemc/blob/master/img/license.svg" alt="License"></a>
+</p>
 
 <h3 align="center">Exemplo do funcionamento do software</h3>
 
