@@ -42,7 +42,7 @@
 <h3>Compilando software com a bilioteca estática</h3>
 
 ```
-	g++ jogodavelha.cpp lib/velha.cpp -o jogodavelha <br />
+	g++ jogodavelha.cpp lib/velha.cpp -o jogodavelha
 ```
 
 <h3>Compilando a biblioteca para geração dinâmica</h3>
